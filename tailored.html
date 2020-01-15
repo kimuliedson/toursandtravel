@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By Alex Mwenda-->
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- Theme Made By Alex Mwenda-->
+    <title>Evacay Africa|Contact</title>
+    <link rel="icon" type="image/x-icon" href="img/evacay-favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bdtp/css/bootstrap-datetimepicker.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="tailored.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html">
+                <img src="img/logoevay.png">
+            </a>
+        </div>
+        <!--<div class="collapse navbar-collapse mt-1" id="myNavbar">-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li class="active"><a href="index.html">Home</a></li>-->
+                <!--&lt;!&ndash;<li><a href="#services">SERVICES</a></li>&ndash;&gt;-->
+                <!--<li><a href="#about">Tailored Tours</a></li>-->
+                <!--&lt;!&ndash;<li><a href="#pricing">PRICING</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash; <li><a href="#contact">CONTACT</a></li> &ndash;&gt;-->
+            <!--</ul>-->
+        <!--</div>-->
+        <div class="collapse navbar-collapse mt-1" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Our Packages</a></li>
+                <li><a href="#about">Tailor Your Tour</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Container (About Section) -->
+<div id="about" class="bg-grey">
+    <img class="mySlides" src="img/slide 1.jpg">
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="bg-grey p-5">
+    <div id="contact" class="container">
+
+        <div class="row mb-3">
+            <!--
+          <div class="col-sm-4">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Nairobi, Kenya</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +254 724789009</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>l7mwenda@gmail.com</p>
+          </div>
+          -->
+            <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+                <h2 class="text-center mb-3 " style="font-family: 'Nanum Brush Script', cursive; font-size:50px">TAILOR MADE TOURS</h2>
+                <p class="text-justify">
+                    Whether you are looking to explore the wildlife of the Kenyan parks, the lakes or the Kenyan coast
+                    Evacay Africa has something suitable for you all. At Evacay Africa  We Work for you to get the best
+                    holiday and adventure destinations and the only thing you do is Pack. Get started on your Kenyan
+                    adventure right away.
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="align-self-center">
+                    <div class="align-self-center">
+                        <form method="post" action="send_contact.php" id="jsonForm">
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="Full Name" type="text"
+                                           required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                           required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="nationality" name="nationality" placeholder="Nationality"
+                                           type="text" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="phone" name="phone" placeholder="Phone Number" type="text"
+                                           required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="children" name="children" placeholder="Children(3-12yrs)"
+                                           type="text" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="adult" name="adult" placeholder="Adults(13yrs+)" type="text"
+                                           required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <div class="input-group date" id='datetimepickerstart'>
+                                        <input class="form-control" id="start" name="start" placeholder="Trip start date" type="text" required>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 form-group" >
+                                    <div class="input-group date" id='datetimepickerstop'>
+                                        <input class="form-control" id="stop" name="stop" placeholder="Trip stop date"
+                                               type="text"   required>
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!--<div class="col-sm-6 form-group">-->
+                                    <!--<input class="form-control" id="days" name="days" placeholder="Number of days on safari"-->
+                                           <!--type="text" required>-->
+                                <!--</div>-->
+                                <!--<div class="col-sm-6 form-group">-->
+                                    <!--<input class="form-control" id="coast" name="coast"-->
+                                           <!--placeholder="Number of days at the coast" type="text" required>-->
+                                <!--</div>-->
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="budget" name="budget" placeholder="Travel Budget per Head"
+                                           type="text" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <select class="form-control" id="currency" name="currency" placeholder="Budget Currency">
+                                        <option value="" disabled selected style="opacity:0.5">Select Your currency</option>
+                                        <option value="USD">USD</option>
+                                        <option value="GB">GB Pound</option>
+                                        <option value="KSH">KSH</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <textarea class="form-control" id="comments" name="comments" placeholder="Additional Information"
+                                      rows="5"></textarea><br>
+                            <div class="row">
+                                <div class="col-sm-12 col-xs-12 form-group">
+                                    <button class="btn btn-default pull-right col-sm-12 btn-bottom" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Add Google Maps
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+-->
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>All Rights Reserved. &copy; eVacay Africa </p>
+    <p style="font-size:10px">Site By Proxify Inc &copy; 2018</p>
+</footer>
+<!-- moments js  -->
+<script src="js/moment.js"></script>
+<!-- Bootstrap core JavaScript -->
+<!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="bdtp/js/bootstrap-datetimepicker.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+    // DateTimePicker
+    $(function () {
+        $('#datetimepickerstart').datetimepicker();
+        $('#datetimepickerstop').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepickerstart").on("dp.change", function (e) {
+            $('#datetimepickerstop').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepickerstop").on("dp.change", function (e) {
+            $('#datetimepickerstart').data("DateTimePicker").maxDate(e.date);
+        });2
+    });
+    // End of DateTimePicker
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+</script>
+
+</body>
+
+</html>

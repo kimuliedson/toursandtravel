@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+    <title>Evacay Africa|Home</title>
+    <link rel="icon" type="image/x-icon" href="img/evacay-favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href='animate.css'>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html">
+                <img src="img/logoevay.png">
+            </a>
+
+        </div>
+        <div class="collapse navbar-collapse mt-1" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Our Packages</a></li>
+                <li><a href="tailored.html">Tailor Your Tour</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container bg-light" >
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h2 class="mb-3 vacay-title" >Contact Us</h2>
+        </div>
+        <div class="container mb-5">
+            <img class="mySlides" src="img/contactus.jpg">
+        </div>
+    </div>
+    <div class="row ">
+            <div class="col-sm-5 ">
+                <h2>Connect With Us</h2>
+                <p>For Support or any questions:
+                    <br>Email us at
+                    <span style="color:lightskyblue;text-decoration:none;">hello@evacayafrica.com</span>
+                </p>
+                <h2>Our Offices</h2>
+                <p>
+                    <i class="fas fa-home contact"></i> The Hub East Africa,Waiyaki Way.Nairobi. Kenya
+                    <br>
+                    <i class="fas fa-phone contact"></i>+254724032889
+                    <br>
+                    <i class="fas fa-envelope contact"></i> hello@evacayafrica.com
+                    <br>
+                    <i class="fab fa-facebook contact"></i> <span> https://www.facebook.com/evacayafrica/ </span>
+                    <br>
+                    <i class="fab fa-instagram contact"></i> www.instagram/evacayafrica
+                </p>
+            </div>
+        <div class="col-sm-7">
+            <form method="post" action="send_contact.php" id="jsonForm">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Full Name" type="text"
+                               required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                               required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="nationality" name="nationality" placeholder="Nationality"
+                               type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="phone" name="phone" placeholder="Phone Number" type="text"
+                               required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Write Your Message Here"
+                          rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 form-group">
+                        <button class="btn btn-default pull-right col-sm-12 btn-bottom" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+   
+    </div>
+    <div class="col-sm-12">
+        <div id="map"></div>
+    </div>
+</div>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script>
+    function initMap() {
+        var evacay = {lat: -1.2619739, lng: 36.7673054};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: evacay
+        });
+        var marker = new google.maps.Marker({
+            position: evacay,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoIMnRcdvFPb_haUql9JK1gE8M4hOf3ks&callback=initMap">
+</script>
+</body>
+<footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a><br>
+    <span class="icon-footer">
+        <a href=" https://www.facebook.com/evacayafrica/ "><i class="fab fa-facebook" ></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""> <i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCafVd7uUPOMYSGrzATBYsHQ"><i class="fab fa-youtube"></i></a>
+    </span>
+    <p>All Rights Reserved. &copy; eVacay Africa </p>
+    <p style="font-size:10px">Site By Proxify Inc &copy; 2018</p>
+</footer>
+</html>
